@@ -110,11 +110,17 @@ container 2 style
 .app-complete {
 	display: none;
 }
-
+.result-group {
+	display: none;res
+}
 .placement{
 	display: none;
 	
 
+}
+.barcode img {
+	display: block;
+	margin: auto;
 }
 .earth, .gliese, .kepler {
 	display: none;

@@ -8,7 +8,8 @@ $(document).ready(function() {
 	$(".result-header").fadeIn(3000);
 
 	$("#name").keydown(function (){
-		$(".keydown").fadeIn(2000);
+		$(".keydown").slideDown(2000);
+		$('.result-group').slideDown(2000);
 	
 		
 	});
@@ -34,7 +35,8 @@ $(document).ready(function() {
   	$('.mental-illness').text(mentalIllness);
   	$('.criminal-history').text(criminalHistory);
   	$('.gender').text(gender);
-  	$('.placement').show();
+  	$('.barcode').fadeOut()
+  	$('.placement').fadeIn();
 
      event.preventDefault(); 
   });
