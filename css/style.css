@@ -24,3 +24,61 @@
 .cf {
     *zoom: 1;
 }
+
+/*Main content styling */
+/*********************************************************/
+
+/*Fonts
+*************************************************************/
+@font-face {
+    font-family: space;
+    src: url(../coalition/Coalition_v2..ttf);
+}
+@font-face {
+    font-family: space2;
+    src: url(../orion_pax/Orion_Pax_Bold.otf);
+}
+body {
+	background: url('../images/space.jpg') no-repeat left center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+header {
+	padding-left: 20px;
+	font-family: space;
+}
+header h1 {
+	font-size: 80px;
+}
+
+header h2 {
+	font-family: space2;
+	margin: 0;
+}
+.container {
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 40%;
+	float: left;
+	box-shadow: 1px 3px 16px 7px #ccc;
+	padding: 30px;
+	font-family: menlo;
+	font-weight: 100;
+	letter-spacing: 1px;
+	
+}
+
+input.form-control {
+	width: 150px;
+}
+
+form {
+	width: 50%;
+}
+
+.container.btn {
+	margin: auto;
+}

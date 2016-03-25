@@ -6,21 +6,27 @@
     <title>Frontier Travel</title>
   </head>
   <body>
+
+     <header>
+      <h1>Frontier</h1>
+      <h2>RELOCATION SERVICES</h2>
+    </header> <!--header for main title-->
     <div class="container">
-      <header>
-        <h1>Frontier</h1>
-        <h2>Premier Travel</h2>
-      </header> <!--header for main title-->
 
       <div id="blanks">
         <form>
           <div class="form-group">
-            <label for="name">Please provide your name</label>
+            <label for="name">Please provide your name:</label>
             <input id="name" class="form-control" type="text">
           </div>
           <div class="form-group">
-            <label for="income">Please input your income level</label>
-            <input id="income" class="form-control" type="text">
+            <label for="income">Please input your income level:</label>
+            <select id="income">
+              <option value="20000">20,000 or under</option>
+              <option value="40000">40,000 or under</option>
+              <option value="20000">60,000 or under</option>
+              <option value="40000">80,000 or under</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="mental-illness">Do you have a history of mental illness?</label>
@@ -51,6 +57,27 @@
         </form><!-- End of form group-->
       </div><!--This is the end of DIV ID BLANKS -->
     </div><!--This is the end of the main container -->
+
+    <div class="container"><!--result container with identical styling-->
+      <div id="result">
+        <div class="result-group">
+            <label for="mental-illness">Mental Illness Inquiry:</label>
+            <p><span class ="mental-illness"></span></p>
+        </div>
+        <div class="result-group">
+            <label for="mental-illness">Mental Illness Inquiry:</label>
+            <p><span class ="mental-illness"></span></p>
+        </div>
+       <div class="result-group">
+            <label for="mental-illness">Mental Illness Inquiry:</label>
+            <p><span class ="mental-illness"></span></p>
+        </div>
+        <div class="result-group">
+            <label for="mental-illness">Mental Illness Inquiry:</label>
+            <p><span class ="mental-illness"></span></p>
+        </div>
+      </div>
+    </div>
 
     <!--Javascript baby -- >
 
