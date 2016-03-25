@@ -57,7 +57,14 @@ $(document).ready(function() {
 			$('.final').show();
 			$(".result-planet").show();
 			$(".gliese").show();
-		}else {
+		} else if (age < 25 && gender === "male"){
+			$('#result').hide();
+			$('.final').show();
+			$(".result-planet").show();
+			$(".result-planet").append("<p>ATTN: No males under 25</p>");
+			$(".earth").show();
+		}
+		else {
 			$('#result').hide();
 			$('.final').show();
 			$(".result-planet").show();
