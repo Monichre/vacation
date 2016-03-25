@@ -13,7 +13,7 @@ _{Fun, Sci-Fi website I wrote do practice jquery methods and custom CSS styling.
 * Should work on any modern Web Browser
 * Simply follow the URL
 
-
+Gh-pages Web address: monichre.github.io/vacation/index.html
 
 ## Known Bugs
 
