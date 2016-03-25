@@ -31,8 +31,8 @@
           <div class="form-group">
             <label for="mental-illness">Do you have a history of mental illness?</label>
             <select id="mental-illness">
-              <option value="female">Yes</option>
-              <option value="male">No</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
             </select>
           </div>
           <div class="form-group">
@@ -58,30 +58,48 @@
       </div><!--This is the end of DIV ID BLANKS -->
     </div><!--This is the end of the main container -->
 
-    <div class="container"><!--result container with identical styling-->
+    <div class="container 2"><!--result container with identical styling-->
+      <h2 class="result-header">Relocation Pending...</h2>
+      <p class="keydown">Thank you for your interest in Frontier, please fill out your application honestly. Background checks required.</p>
+      <p class="app-complete">Thank you for your application <span class="name"></span>. Frontier is a highly selective organization. Please wait while we finish processing.</p>
       <div id="result">
         <div class="result-group">
-            <label for="mental-illness">Mental Illness Inquiry:</label>
-            <p><span class ="mental-illness"></span></p>
+              <label for="gender">Gender:</label>
+              <p><span class ="gender"></span></p>
+          </div>
+          <div class="result-group">
+              <label for="income">Income Level:</label>
+              <p><span class ="income"></span></p>
+          </div>
+          <div class="result-group">
+              <label for="mental-illness">Mental Illness Inquiry:</label>
+              <p><span class ="mental-illness"></span></p>
+          </div>
+         <div class="result-group">
+              <label for="criminal-history">Criminal History Inquiry:</label>
+              <p><span class ="criminal-history"></span></p>
+          </div>
+          <div class="result-group">
+              <label for="age">Mental Illness Inquiry:</label>
+              <p><span class ="age"></span></p>
+          </div>
         </div>
-        <div class="result-group">
-            <label for="mental-illness">Mental Illness Inquiry:</label>
-            <p><span class ="mental-illness"></span></p>
-        </div>
-       <div class="result-group">
-            <label for="mental-illness">Mental Illness Inquiry:</label>
-            <p><span class ="mental-illness"></span></p>
-        </div>
-        <div class="result-group">
-            <label for="mental-illness">Mental Illness Inquiry:</label>
-            <p><span class ="mental-illness"></span></p>
-        </div>
+        <button type="submit" class="placement btn">View Placement Results</button>
+      </div><!--end of ID RESULT -->
+    </div><!-- End of second main container -->
+      <div class="container barcode"><!--BARCODE DIV -->
+        <img src="">
+        <img src="">
+        <div id="result-planet"> <!--RESULT FOR PLANET RELOCATION --><!--DEFAULT HIDDEN-->
+          <div class="gliese"></div>
+          <div class="earth"></div>
+          <div class="Kepler"></div>
+      </div><!--end of PLANET DIV group -->
       </div>
-    </div>
 
-    <!--Javascript baby -- >
+    <!--Javascript baby -->
 
-    <script   src="https://code.jquery.com/jquery-2.2.2.js"   integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="   crossorigin="anonymous"></script>  
+    <script src="https://code.jquery.com/jquery-2.2.2.js"   integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="   crossorigin="anonymous"></script>  
 
     <script src="js/main.js"></script>
   </body>
