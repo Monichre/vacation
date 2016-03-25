@@ -61,7 +61,8 @@ $(document).ready(function() {
 			$('#result').hide();
 			$('.final').show();
 			$(".result-planet").show();
-			$(".result-planet").append("<p>ATTN: No males under 25</p>");
+			$(".result-planet").append("<p>ATTN " + name + ": No males under 25</p>");
+			$('.result-header').hide();
 			$(".earth").show();
 		}
 		else {
