@@ -14,18 +14,17 @@ $(document).ready(function() {
 		
 	});
 	console.log("im working");
-	 $(".btn").click(function(event) {
-	 	 
-  	
+	 $(".info").click(function(event) {
+	 	 event.preventDefault(); 
   	  
-  	// variables NAME, AGE, CRIMINAL, ILLNESS, INCOME, GENDER//
+  	// Global variables NAME, AGE, CRIMINAL, ILLNESS, INCOME, GENDER//
 
-    var age = parseInt($("input#age").val());
-    var name = $("input#name").val();
-    var gender = $("select#gender").val();
-    var mentalIllness = $("select#mental-illness").val();
-    var income = parseInt($("select#income").val());
-    var criminalHistory = $("select#criminal-history").val();
+     age = parseInt($("input#age").val());
+     name = $("input#name").val();
+     gender = $("select#gender").val();
+     mentalIllness = $("select#mental-illness").val();
+     income = parseInt($("select#income").val());
+     criminalHistory = $("select#criminal-history").val();
 
   
 
@@ -35,9 +34,37 @@ $(document).ready(function() {
   	$('.mental-illness').text(mentalIllness);
   	$('.criminal-history').text(criminalHistory);
   	$('.gender').text(gender);
-  	$('.barcode').fadeOut()
-  	$('.placement').fadeIn();
+  	$('.barcode').hide()
+  	$('.keydown').hide();
+  	$('.placement').show();
+  	
 
-     event.preventDefault(); 
+     
   });
+	$('.placement').click(function(event){
+		event.preventDefault();
+		$('.result-header').hide();
+		//Placement conditionals for earth //
+		if (mentalIllness === "yes" || criminalHistory === "yes"){
+			
+			$('#result').hide();
+			$('.final').show();
+			$(".result-planet").show();
+			$(".earth").show();
+		} else if ((age >= 25 && income > 40000) || ((gender === "female") && age < 25)){
+			
+			$('#result').hide();
+			$('.final').show();
+			$(".result-planet").show();
+			$(".gliese").show();
+		}else {
+			$('#result').hide();
+			$('.final').show();
+			$(".result-planet").show();
+			$(".kepler").show();
+		}
+
+	});
 });
+
+// AN ATTEMPT AT USING HTTP GET //
