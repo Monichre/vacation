@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Frontier Travel</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Frontier</h1>
+        <h2>Premier Travel</h2>
+      </header> <!--header for main title-->
+
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Please provide your name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="income">Please input your income level</label>
+            <input id="income" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="mental-illness">Do you have a history of mental illness?</label>
+            <select id="mental-illness">
+              <option value="female">Yes</option>
+              <option value="male">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="criminal-history">Do you have a criminal record?</label>
+            <select id="criminal-history">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="age">Enter your Age</label>
+            <input id="age" type="text">
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Process my information</button>
+        </form><!-- End of form group-->
+      </div><!--This is the end of DIV ID BLANKS -->
+    </div><!--This is the end of the main container -->
+
+    <!--Javascript baby -- >
+
+    <script   src="https://code.jquery.com/jquery-2.2.2.js"   integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="   crossorigin="anonymous"></script>  
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
